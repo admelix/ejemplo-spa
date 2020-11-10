@@ -1,1 +1,73 @@
-<p>tabla works!</p>
+<div class="container mt-2">
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Variable</th>
+                <th scope="col">Pipe</th>
+                <th scope="col">Salida</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td> {{ nombre }} </td>
+                <td>UPPERCASE</td>
+                <td>{{ nombre | uppercase }}</td>
+            </tr>
+            <tr>
+                <td> {{ nombre }} </td>
+                <td>LOWERCASE</td>
+                <td>{{ nombre | lowercase }}</td>
+            </tr>
+            <tr>
+                <td> {{ nombre }} </td>
+                <td>Slice:3</td>
+                <td>{{ nombre | slice:3 }}</td>
+            </tr>
+            <tr>
+                <td> {{ nombre }} </td>
+                <td>Slice:0:3</td>
+                <td>{{ nombre | slice:0:3 }}</td>
+            </tr>
+            <tr>
+                <td>{{ arreglo }}</td>
+                <td>slice:1:5</td>
+                <td>{{ arreglo | slice:1:5 }}</td>
+            </tr>
+            <tr>
+                <td> {{ PI }} </td>
+                <td>NUMBER</td>
+                <td>{{ PI | number }}</td>
+            </tr>
+            <tr>
+                <td> {{ porcentaje }} </td>
+                <td>percent</td>
+                <td>{{ porcentaje | percent }}</td>
+            </tr>
+            <tr>
+                <td> {{ PI }} </td>
+                <td>sin decimales</td>
+                <td>{{ PI | number:'.0-0' }}</td>
+            </tr>
+            <tr>
+                <td> {{ PI }} </td>
+                <td>number con dos decimales</td>
+                <td>{{ PI | number:'.2-2' }}</td>
+            </tr>
+            <tr>
+                <td> {{ fecha }} </td>
+                <td>date</td>
+                <td>{{ fecha | date }}</td>
+            </tr>
+            <tr>
+                <td> {{ fecha }} </td>
+                <td>date:medium</td>
+                <td>{{ fecha | date:'medium' }}</td>
+            </tr>
+            <tr>
+                <td> {{ fecha }} </td>
+                <td>date:short</td>
+                <td>{{ fecha | date:'short' }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
